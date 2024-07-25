@@ -1,0 +1,58 @@
+{
+  "name": "DittoFeed",
+  "url": "https://github.com/venturenox/posthog-dittofeed-app/",
+  "description": "Send event data to DittoFeed",
+  "main": "index.js",
+  "config": [
+      {
+          "key": "dataPlaneUrl",
+          "hint": "Provide DittoFeed API URL.",
+          "name": "DittoFeed API URL",
+          "type": "string",
+          "default": "http://localhost:3000/api/public/apps/identify",
+          "required": true
+      },
+      {
+          "key": "writeKey",
+          "hint": "Provide API key for your DittoFeed account found on the settings page.",
+          "name": "DittoFeed API Key",
+          "type": "string",
+          "default": "",
+          "required": true,
+          "secret": true
+      },
+      {
+          "key": "phEmail",
+          "hint": "Provide attribute name for email.",
+          "name": "Email attribute name",
+          "type": "string",
+          "default": "",
+          "required": false
+      },
+      {
+          "key": "phPhoneNumber",
+          "hint": "Provide attribute name for phone number.",
+          "name": "Phone number attribute name",
+          "type": "string",
+          "default": "",
+          "required": false
+      },
+      {
+          "key": "phDeviceToken",
+          "hint": "Provide attribute name for firebase device token.",
+          "name": "Device Token attribute name",
+          "type": "string",
+          "default": "",
+          "required": false
+      },
+      {
+          "key": "phCustom",
+          "hint": "Provide attribute name for your custom field.",
+          "name": "Custom attribute name",
+          "type": "string",
+          "default": "",
+          "required": false
+      }
+  ]
+}
+
