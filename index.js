@@ -136,7 +136,7 @@ function getElementByOrderZero(json) {
 }
 
 
-export async function composeDittoFeedWebhook(event, { config, global }) {
+export async function composeWebhook(event, { config, global }) {
     let dittoFeedPayload = {
         userId: '',      // userId should be outside traits
         messageId: '',   // messageId should be outside traits
